@@ -41,15 +41,32 @@ fi
 
 echo "Unpacking '${ARCHIVE_NAME}'..."
 unzip -q "${LOCAL_ARCHIVE_FILE}"
-mv STM32Cube_FW_*/Drivers .
+
+mv STM32Cube_FW_F1*/* .
 
 echo "Removing unnecessary files..."
-rm -rf \
-Drivers/BSP/ \
-Drivers/CMSIS/ \
-Drivers/STM32F?xx_HAL_Driver/*.chm \
-STM32Cube_* \
 
+rm -rf \
+_htmresc \
+CMSIS/Flash \
+CMSIS/Debug \
+Documentation \
+Drivers/BSP/ \
+Drivers/CMSIS/CMSIS?END*.* \
+Drivers/CMSIS/index.html \
+Drivers/CMSIS/README.txt \
+Drivers/CMSIS/Documentation \
+Drivers/CMSIS/DSP_Lib \
+Drivers/CMSIS/Include \
+Drivers/CMSIS/Lib \
+Drivers/CMSIS/RTOS \
+Drivers/CMSIS/SVD \
+Drivers/STM32F?xx_HAL_Driver/ \
+MDK \
+Middlewares \
+Projects \
+Utilities \
+package.xml
 find . -name '*.exe' -exec rm \{} \;
 
 echo "Creating README.md..."
@@ -74,16 +91,29 @@ The original files are available in the \`originals\` branch.
 
 These files were extracted from \`${ARCHIVE_NAME}\`.
 
-To save space, only the following folder was copied:
-
-* STM32Cube\_FW\_*/Drivers
-
-and from it, the following folders/files were removed:
+To save space, the following folders/files were removed:
 
 * all non-portable *.exe files
+* \_htmresc
+* CMSIS/Flash
+* CMSIS/Debug
+* Documentation
 * Drivers/BSP/
-* Drivers/CMSIS/
-* Drivers/STM32F?xx\_HAL\_Driver/*.chm
+* Drivers/CMSIS/CMSIS?END*.*
+* Drivers/CMSIS/index.html
+* Drivers/CMSIS/README.txt
+* Drivers/CMSIS/Documentation
+* Drivers/CMSIS/DSP_Lib
+* Drivers/CMSIS/Include
+* Drivers/CMSIS/Lib
+* Drivers/CMSIS/RTOS
+* Drivers/CMSIS/SVD
+* Drivers/STM32F?xx_HAL_Driver/
+* MDK
+* Middlewares
+* Projects
+* Utilities
+* package.xml
 
 ## Changes
 
