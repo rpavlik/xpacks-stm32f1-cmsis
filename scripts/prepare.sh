@@ -69,6 +69,7 @@ Utilities \
 package.xml
 find . -name '*.exe' -exec rm \{} \;
 
+DEVICE_LAYER_VERSION="$(cat Drivers/CMSIS/Device/ST/STM32F?xx/Include/stm32f?xx.h | grep '@version' | sed 's/.*V//')"
 echo "Creating README.md..."
 cat <<EOF >README.md
 # ${FAMILY} CMSIS
@@ -78,7 +79,8 @@ includes the ${FAMILY} CMSIS files from the STM32Cube HAL distribution.
 
 ## Version
 
-* v${RELEASE_VERSION}
+* CMSIS Device Peripheral Access Layer v${DEVICE_LAYER_VERSION}
+* From STM32CubeMX HAL firmware bundle v${RELEASE_VERSION}
 
 ## Documentation
 
