@@ -9,7 +9,7 @@ IFS=$'\n\t'
 
 # https://sourceforge.net/projects/micro-os-plus/files/Vendor%20Archives/STM32/
 
-RELEASE_VERSION="1.4.0"
+RELEASE_VERSION="1.6.0"
 
 FAMILY="STM32F1"
 GITHUB_PROJECT="rpavlik/xpacks-stm32f1-hal"

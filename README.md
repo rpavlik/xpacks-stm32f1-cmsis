@@ -1,11 +1,11 @@
 # STM32F1 CMSIS
 
-This project, available from [GitHub](https://github.com/rpavlik/xpacks-stm32f1-cmsis),
+This project, available from [GitHub](https://github.com/rpavlik/xpacks-stm32f1-hal),
 includes the STM32F1 CMSIS files from the STM32Cube HAL distribution.
 
 ## Version
 
-* v1.4.0
+* v1.6.0
 
 ## Documentation
 
@@ -16,7 +16,7 @@ The latest STM documentation is available from
 
 The original files are available in the `originals` branch.
 
-These files were extracted from `stm32cube_fw_f1_v140.zip`.
+These files were extracted from `stm32cube_fw_f1_v160.zip`.
 
 To save space, the following folders/files were removed:
 
