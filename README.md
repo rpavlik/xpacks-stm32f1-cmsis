@@ -1,7 +1,7 @@
-# STM32F1 HAL
+# STM32F1 CMSIS
 
-This project, available from [GitHub](https://github.com/rpavlik/xpacks-stm32f1-hal),
-includes the STM32F1 HAL files.
+This project, available from [GitHub](https://github.com/rpavlik/xpacks-stm32f1-cmsis),
+includes the STM32F1 CMSIS files from the STM32Cube HAL distribution.
 
 ## Version
 

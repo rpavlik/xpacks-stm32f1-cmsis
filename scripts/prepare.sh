@@ -71,10 +71,10 @@ find . -name '*.exe' -exec rm \{} \;
 
 echo "Creating README.md..."
 cat <<EOF >README.md
-# ${FAMILY} HAL
+# ${FAMILY} CMSIS
 
 This project, available from [GitHub](https://github.com/${GITHUB_PROJECT}),
-includes the ${FAMILY} HAL files.
+includes the ${FAMILY} CMSIS files from the STM32Cube HAL distribution.
 
 ## Version
 
