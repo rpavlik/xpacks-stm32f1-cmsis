@@ -5,7 +5,8 @@ includes the STM32F1 CMSIS files from the STM32Cube HAL distribution.
 
 ## Version
 
-* v1.6.0
+* CMSIS Device Peripheral Access Layer v4.2.0
+* From STM32CubeMX HAL firmware bundle v1.6.0
 
 ## Documentation
 
