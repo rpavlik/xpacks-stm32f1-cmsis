@@ -9,4 +9,9 @@ then
 fi
 
 PDSC_FILE="Keil.STM32F1xx_DFP.pdsc"
-xcdl pdsc-convert --file ${PDSC_FILE} --output xpdsc.json
+TEMPNAME=xpdsc-tmp.json
+xcdl pdsc-convert --file ${PDSC_FILE} --output ${TEMPNAME}
+
+# This step requires jq, a command-line json processor: https://github.com/stedolan/jq
+cat ${TEMPNAME} | jq -f scripts/adjust-xpdsc.jq > xpdsc.json
+rm ${TEMPNAME}
