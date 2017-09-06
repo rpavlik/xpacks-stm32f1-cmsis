@@ -3,14 +3,20 @@
 This project, available from [GitHub](https://github.com/rpavlik/xpacks-stm32f1-hal),
 includes the STM32F1 CMSIS files from the STM32Cube HAL distribution.
 
+It also bundles the SVD and PDSC files from Keil.
+
 ## Version
 
-* v1.6.0
+* From STM32CubeMX HAL firmware bundle v1.6.0:
+  * CMSIS Device Peripheral Access Layer v4.2.0
+* From Keil device family pack v2.2.0 (see [Keil pack index](http://www.keil.com/dd2/pack/))
+  * PDSC and SVD files
+  * CMSIS drivers excluded because this DFP depends on the old STM stdperiph library, rather than the newer HAL.
 
 ## Documentation
 
 The latest STM documentation is available from
-[STM32CubeF1](http://www.st.com/en/embedded-software/stm32cubef1.html.
+[STM32CubeF1](http://www.st.com/en/embedded-software/stm32cubef1.html).
 
 ## Original files
 
@@ -41,6 +47,8 @@ To save space, the following folders/files were removed:
 * Projects
 * Utilities
 * package.xml
+
+The files in `CMSIS/SVD` and the `.pdsc` file were extracted from `Keil.STM32F1xx_DFP.2.2.0.pack`
 
 ## Changes
 
